@@ -35,6 +35,6 @@ function weatherShowFn(data) {
 		html(`Wind Speed: ${data.wind.speed} m/s`);
 	$('#weather-icon').
 		attr('src',
-			`C:/Users/Shylu/OneDrive/Desktop/Weather/images/clear.png`);
+			`clear.png`);
 	$('#weather-info').fadeIn();
 }
