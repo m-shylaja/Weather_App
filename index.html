@@ -1,40 +1,69 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" href="styles.css">
-	<title>Weather App</title>
-</head>
-
-<body>
-	<div class="container">
-		<div class="weather-card">
-			<h1 style="color: black;">
-				Weather App
-			</h1>
-			
-			
-			<input type="text" id="city-input"
-				placeholder="Enter city name">
-			<button id="city-input-btn"
-					onclick="weatherFn($('#city-input').val())">
-					Get Weather
-			</button>
-			<div id="weather-info"
-				class="animate__animated animate__fadeIn">
-				<h3 id="city-name"></h3>
-				<p id="date"></p>
-				<img id="weather-icon" src="clear.png" alt="Weather Icon">
-				<p id="temperature" ></p>
-				<p id="description"></p>
-				<p id="wind-speed"></p>
-			</div>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js">
-	</script>
-	<script src="https://momentjs.com/downloads/moment.min.js">
-	</script>
-	<script src="script.js"></script>
-</body>
-
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App Project JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Weather Dashboard</h1>
+    <div class="container">
+      <div class="weather-input">
+        <h3 style=" color:aliceblue">Enter a City Name</h3>
+        <input class="city-input" type="text" placeholder="E.g., Kolar, Karnataka,India">
+        <button class="search-btn">Search</button>
+        <div class="separator"></div>
+        <button class="location-btn">Use Current Location</button>
+      </div>
+      <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h2>_______ ( ______ )</h2>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </div>
+        </div>
+        <div class="days-forecast">
+          <h2>5-Day Forecast</h2>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card">
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </body>
 </html>
